@@ -1,0 +1,35 @@
+{
+  "name": "warehouse",
+  "version": "1.0.0",
+  "description": "Warehouse Test Project",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "start:dev": "nodemon",
+    "compile": "tsc",
+    "start": "npx ts-node src/index.ts",
+    "knex": "./node_modules/.bin/knex --knexfile src/database/knexfile.ts"
+  },
+  "keywords": [],
+  "author": "Cris Oporto",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.9.5",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.8.1",
+    "knex": "^3.0.1",
+    "pg": "^8.11.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "sqlite3": "^5.1.6",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1"
+  }
+}
